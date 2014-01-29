@@ -1,0 +1,118 @@
+/*PLAYER STYLES*/
+body, html{
+    font-family: sans-serif;
+    color: #D5D5D5;
+    background-color: #2A2A2A;
+    height: 100%;
+}
+
+
+h2, h3{
+    color: #717171;
+    font-size: .7em;
+    text-transform:uppercase;
+}
+
+header{
+    background: linear-gradient(#C7C7C7, #838383);
+    border-bottom: 1px solid #1E1E1E;
+}
+header form{
+    display: inline-block;
+}
+header input{
+    width: 200px;
+    margin: 8px;
+    border-radius: 50px;
+    border: 1px solid #585858;
+    padding: 4px 8px;
+    box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, 0.25);
+    transition: .3s all;
+}
+header input:focus{
+    outline: none;
+    border: 1px solid #4daae9;
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.25),  0 0 3px 2px rgba(76, 160, 222, 0.30);
+}
+.separator{
+    /*TODO: why wont this fill 100% height??*/
+    height: 100%;
+    border-left: 1px solid #ccc;
+}
+header i{
+    margin-left: 10px;
+}
+header .history{
+    display: inline-block;
+    margin: 7px 0 -6px 20px;
+    list-style: none;
+}
+header .history li{
+    padding-left: 10px;
+    border-left: 2px solid #ccc;
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+footer{
+    border-width: 1px;
+    border-style: solid none solid;
+    border-color: #626262 white #363636;
+    background: linear-gradient(#4D4D4D, #3C3C3C);
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.content{
+    /*TODO: check this calc*/
+    height: calc(100% - 90px);
+}
+
+.left-panel{
+    background-color: #1F1F1F;
+    border-right: 1px solid #373737;
+    width: 220px;
+    float: left;
+    /*TODO: check this calc*/
+    height: 100%;
+    padding: 15px;
+}
+.left-panel ul{
+    padding: 5px 0 0 10px;
+}
+.left-panel li{
+    padding: 3px 0;
+    font-size: .7em;
+}
+
+
+
+.result{
+    width: 800px;
+    float: left;
+    /*TODO: check this calc*/
+    width: calc(100% - 220px);
+    height: 100%;
+    overflow: scroll;
+}
+.result .header{
+    padding: 15px;
+}
+.result .header .search-id{
+    color: #2f2f2f;
+    float: right;
+}
+
+.result .listing{
+    font-size: 10px;
+}
+.result .listing tr:nth-child(even){
+    background-color: #252525;
+}
+.result .listing td{
+    padding: 4px;
+}
